@@ -1,0 +1,32 @@
+//__________text-color
+$white-text: #ffffff;
+$white-text-opacity: rgba(255,255,255,0.6);
+$blue-text: #3e85af;
+$blue-text-dark: #172933;
+$grey-text: #979b9e;
+
+//__________background-color
+$white-bg: #ffffff;
+$coral-bg: #ff8066;
+$coral-bg-light: #ff9f8b;
+$main-bg: #f3f4f5;
+$grey-bg-light: #f7f8f8;
+$blue-bg: #3e85af;
+$blue-bg-dark: #132e42;
+
+//__________hover
+$coral-hover: #f06e53;
+
+//__________border-color
+$white-border: rgba(255,255,255,0.34);
+$grey-border: #d9d9d9;
+
+//__________@media
+$lg: 1199px;
+$md: 991px;
+$sm: 767px;
+$xs: 575px;
+
+//__________retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

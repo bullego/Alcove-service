@@ -1,0 +1,6 @@
+#Ignore files
+production/
+node_modules/
+psd/
+jpeg/
+project-info.txt

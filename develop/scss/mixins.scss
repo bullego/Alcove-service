@@ -1,0 +1,77 @@
+@mixin nav-menu {
+	font-family: "Montserrat", "Arial";
+	font-size: 13px;
+	line-height: 1;
+	font-style: normal;
+	font-weight: 500;
+}
+@mixin header-contact {
+	font-family: "Montserrat";
+	font-size: 12px;
+	line-height: 1;
+	font-style: normal;
+	font-weight: 600;
+}
+@mixin footer-contact {
+	font-family: "Montserrat";
+	font-size: 14px;
+	line-height: 1;
+	font-style: normal;
+	font-weight: 700;
+}
+@mixin btn-text {
+	font-family: "Montserrat";
+	font-size: 18px;
+	line-height: 1;
+	font-style: normal;
+	font-weight: 700;
+}
+@mixin main-title {
+	font-family: "Montserrat";
+	font-size: 35px;
+	line-height: 1;
+	font-style: normal;
+	font-weight: 800;
+}
+@mixin main-subtitle {
+	font-family: "Montserrat";
+	font-size: 20px;
+	line-height: 1;
+	font-style: normal;
+	font-weight: 500;
+}
+@mixin section-title {
+	font-family: "Montserrat";
+	font-size: 34px;
+	line-height: 1;
+	font-style: normal;
+	font-weight: 700;
+}
+@mixin section-item-title {
+	font-family: "Montserrat";
+	font-size: 18px;
+	line-height: 1;
+	font-style: normal;
+	font-weight: 700;
+}
+@mixin section-item-text {
+	font-family: "Montserrat";
+	font-size: 14px;
+	line-height: 1;
+	font-style: normal;
+	font-weight: 400;
+}
+@mixin list-item {
+	font-family: "Montserrat";
+	font-size: 14px;
+	line-height: 1;
+	font-style: normal;
+	font-weight: 700;
+}
+@mixin small-text {
+	font-family: "Montserrat";
+	font-size: 11px;
+	line-height: 1;
+	font-style: normal;
+	font-weight: 400;
+}

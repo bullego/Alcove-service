@@ -1,0 +1,57 @@
+@font-face {
+  font-display: swap; // свойство font-display для современных браузеров (старые загрузят шрифты по своему). У swap нет блокировки отображения шрифта, если нужный шрифт не успел загрузиться браузером.. + бесконечное ожидание подмены стандартного/системного шрифта (Arial) на нужный шрифт (Montserrat)
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local(Montserrat-Regular), //проверяем наличие шрифта в ОС пользователя
+       url("../fonts/Montserrat-Regular.woff2") format("woff2"),//если шрифт не установлен, тогда загружаем его с сервера по указанному пути(без установки в ОС пользователя)
+	     url("../fonts/Montserrat-Regular.woff") format("woff");//если шрифт не установлен, тогда загружаем его с сервера по указанному пути(без установки в ОС пользователя)
+}
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat-Medium"),
+       url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+       url("../fonts/Montserrat-Medium.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat-SemiBold"),
+       url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+       url("../fonts/Montserrat-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat-Bold"),
+       url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+       url("../fonts/Montserrat-Bold.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Montserrat-ExtraBold"),
+	     url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"),
+	     url("../fonts/Montserrat-ExtraBold.woff") format("woff");
+}
+
+/* 
+100 - Thin
+200 - Extra Light, Ultra Light
+300 - Light
+400 - Normal, Book, Regular
+500 - Medium
+600 - Semi Bold, Demi Bold
+700 - Bold
+800 - Extra Bold, Ultra Bold
+900 - Black, Heavy
+*/
