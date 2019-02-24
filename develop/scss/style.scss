@@ -25,6 +25,11 @@
 	@include section-item-title;
 	font-weight: 600;
 }
+.form-row {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
 .form-select {
 	width: 100%;
 }
