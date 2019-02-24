@@ -40,6 +40,7 @@
 //__________header(section_1)
 .page-header {
 	min-height: 40.13rem;
+	height: 40.13rem; // for IE
 	margin-top: 3.75rem;
 	background-color: $main-bg;
 	background-image: url('../img/main-bg-desktop@1x.jpg');
@@ -60,7 +61,7 @@
 
 	.color-logo {
 		width: 8.75rem;
-		height: auto;
+		height: 2.18rem;
 	} 
 }
 .header-navbar {
@@ -74,14 +75,18 @@
 	//border: 1px solid red;
 
 	.icon-phone {
-		width: 0.8125rem;
-		height: 0.8125rem;
+		//width: 0.8125rem;
+		width: 13px;
+		//height: 0.8125rem;
+		height: 13px;
 		margin-top: 0.25rem;
 		margin-right: 0.31rem;
 		background-image: url('../img/phone-solid.svg');
 		background-repeat: no-repeat;
-		background-size: 0.8125rem 0.8125rem;
+		//background-size: 0.8125rem 0.8125rem;
+		background-size: 13px 13px;
 		background-position: center;
+		//border: 1px solid red;
 	}
 	.phone-number {		
 		line-height: 1.25rem;
@@ -212,6 +217,7 @@
 @media screen and (max-width: $md) {
 	.page-header {
 		min-height: 35.13rem;
+		height: 35.13rem; // for IE
 	}
 	.header-navbar {
 		display: flex;
@@ -266,6 +272,7 @@
 @media screen and (max-width: $sm) {
 	.page-header {
 		min-height: 30.13rem;
+		height: 30.13rem; //for IE
 	}
 	.header-btn {
 		margin-left: 0rem;
@@ -283,6 +290,7 @@
 	}
 	.page-header {
 		min-height: 34rem;
+		height: 34rem;
 		margin-top: 1.5rem;
 		//background-image: none;
 		background-image: url('../img/main-bg-desktop@1x.jpg');
@@ -309,6 +317,7 @@
 	padding-top: 1.25rem;
 	padding-bottom: 1.25rem;
 	min-height: 12.5rem;
+	height: 12.5rem; // for IE
 	background-color: $blue-bg;
 }
 .statistics-info {	
@@ -384,6 +393,8 @@
 }
 @media screen and (max-width: $xs) {
 	.statistics {
+		min-height: 22rem;
+		height: 22rem;
 		padding-top: 2rem;
 		padding-bottom: 2rem;
 	}
@@ -536,6 +547,10 @@
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
+
+		.cards-text {
+			width: 330px; // for IE
+		}
 	}
 	.cards-price {
 		top: 0;
@@ -574,6 +589,10 @@
 	}
 	.features-cards {
 		margin-bottom: 2rem;
+
+		.cards-text {
+			width: 240px; // for IE
+		}
 	}
 }
 @media screen and (max-width: $xs) {
@@ -852,6 +871,7 @@
 	padding-top: 1.25rem;
 	padding-bottom: 1.25rem;
 	min-height: 10rem;
+	height: 10rem; // for IE
 	background-color: $blue-bg;
 }
 .brands-item {
@@ -867,6 +887,10 @@
 }
 
 @media screen and (max-width: $xs) {
+	.brands {
+		min-height: 13rem;
+		height: 13rem; // for IE
+	}
 	.brands-img {
 		max-width: 130px;
 		height: auto;
@@ -1481,6 +1505,9 @@
 		font-size: 1.75rem;
 	}
 	.feedback-slider {
+		.sl-item {
+			width: 258px;
+		}
 		.slick-prev {				
 			display: none !important;
 		}
@@ -1585,6 +1612,7 @@
 }
 @media screen and (max-width: $sm) {
 	.text-top {
+		width: 290px; // for IE
 		font-size: 1.75rem;
 	}
 	.text-bottom {
@@ -1783,6 +1811,10 @@
 			margin-bottom: 0rem;
 		}
 	}
+	.contacts-dscr {
+		width: 290px; // for IE
+		//margin: 0 auto;
+	}
 }
 
 //____________________footer(section_8)
@@ -1794,7 +1826,8 @@
 }
 .footer-logo {
 	width: 8.75rem;
-	height: auto;
+	//height: auto;
+	height: 2.18rem;
 	//border: 1px solid red;
 }
 .footer-security {
@@ -1843,7 +1876,10 @@
 }
 @media screen and (max-width: $xs) {
 	.footer-security {
+		width: 210px;
+		margin: 0 auto;
 		margin-top: 2rem;
+		line-height: 1.2;
 		text-align: center;
 	}
 	.footer-contacts {
